@@ -10,6 +10,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto:wght@100;200;300;400&display=swap');
     </style>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -50,13 +52,420 @@
             </div>
         </div>
     </header>
-
+    <main>
+        <section>
+            <div class="title" data-aos="fade-up" data-aos-duration="1000">
+                <span>Ce que nous faisons de mieux</span>
+                <h2>Nos services numériques</h2>
+            </div>
+            <div class="container">
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>Support 24h/24</h3>
+                        <p>La personnalisation du thème est prête à personnaliser les éléments selon le désir du client, ce qui est facile.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h3>Seo & Marketing</h3>
+                        <p>Nous fournissons un service dans lequel PSD à HTML qui est acceptable pour n’importe quel navigateur et adapté à n’importe quel écran.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <h3>Branding</h3>
+                        <p>Si vous souhaitez ajouter ou développer un plugin dans votre projet, nous sommes en mesure de préparer un plugin.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Site web</h3>
+                        <p>Nous créons les meilleurs sites rapides, élégants et fiable pour votre entreprise.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h3>Flyers</h3>
+                        <p>Pous vos affiches et vos publications, nous vous fournissons de beaux flyers.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="description">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <h3>Conseils</h3>
+                        <p>Nous sommes disponible si vous avez des questions pour vous lancer dans le Web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="stats">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <span data-goal="256" class="number">0</span>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span data-goal="390" class="number">0</span>
+                    <p>Projets complets</p>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span data-goal="359" class="number">0</span>
+                    <p>Projets lancés</p>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
+                    <i class="fa-solid fa-head-side-virus"></i>
+                    <span data-goal="235" class="number">0</span>
+                    <p>Années d'expérience</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-us">
+                <div class="img-bloc" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/pic1-1.jpg" alt="image">
+                </div>
+                <div class="img-text">
+                    <div class="title" data-aos="fade-left" data-aos-duration="200">
+                        <span>Qui sommes-nous ?</span>
+                        <h2>Construisez mieux votre site Web d’entreprise</h2>
+                    </div>
+                    <p data-aos="fade-left" data-aos-duration="400">Entreprise basée à Casablanca, déterminée à vous offrir les meilleurs services de création de site web
+                    Nous sommes un concurrent fort et digne dans le domaine du développement web. Nous travaillons en équipe avec un client. Cela nous permet d’identifier les besoins des clients et d’offrir la meilleure solution. Une équipe de spécialistes divers travaille sur chaque projet.
+                    l’interaction avec le client est effectuée à toutes les étapes du projet :</p>
+                    <ul data-aos="fade-left" data-aos-duration="600">
+                        <li>Etude du projet</li>
+                        <li>Conception de la maquette</li>
+                        <li>Développement du site</li>
+                        <li>Mise en ligne</li>
+                        <li>Formation au client</li>
+                    </ul>
+                    <a href="#" class="btn" data-aos="fade-left" data-aos-duration="1000">Demander un devis</a>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="title" data-aos="fade-up" data-aos-duration="1000">
+                <span>Portfolio</span>
+                <h2>Nos derniers réalisations</h2>
+            </div>
+            <div class="works">
+                 <!-- Filter Controls !-->
+                 <div class="controls">
+                    <ul id="filters" class="clearfix">
+                        <li class="filter active" data-filter="all">Tous</li>
+                        <li class="filter" data-filter=".websites">Sites web</li>
+                        <li class="filter" data-filter=".logos">Logos</li>
+                        <li class="filter" data-filter=".flyers">Flyers</li>
+                    </ul>
+                </div>
+    
+                <!-- Filter Grid !-->
+                <div class="item-grid">
+                    <!-- Item 1 !-->
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/moustaphadiouf" target="_blank" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/1.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/FD-confort" target="_blank" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/2.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/accountasen" target="_blank" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/3.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/Arabica-casablanca" target="_blank" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/4.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/Modern-Fast-Food" target="_blank" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/5.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/6.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/7.jpg" alt="website">
+                    </div>
+                    <div class="item websites" data-cat="websites">
+                        <a href="https://moustapha76.github.io/senbuilder" class="btn">Visiter le site <i class="fa-solid fa-up-right-from-square"></i></a>
+                        <img src="assets/portfolio/websites/8.jpg" alt="website">
+                    </div>
+                    <!-- Item 2 !-->
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/1.jpg" alt="logo">
+                    </div>
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/2.jpg" alt="logo">
+                    </div>
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/3.jpg" alt="logo">
+                    </div>
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/4.jpg" alt="logo">
+                    </div>
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/5.jpg" alt="logo">
+                    </div>
+                    <div class="item logos" data-cat="logos">
+                        <img src="assets/portfolio/logos/6.jpg" alt="logo">
+                    </div>
+                    <!-- Item 3 !-->
+                    <div class="item flyers" data-cat="flyers">
+                        <img src="assets/portfolio/flyers/flyer.jpg" alt="flyer">
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <section id="plan">
+            <div class="title" data-aos="fade-up" data-aos-duration="1000" >
+                <span>Abonnement</span>
+                <h2>Choisissez votre plan</h2>
+            </div>
+            <div class="container">
+                <div class="bloc" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="header">
+                        <h3>Basique</h3>
+                        <span class="price">5000<small> cfa / mois</small></span>
+                    </div>
+                    <div class="main">
+                        <ul>
+                            <li>Design graphique</li>
+                            <li>Web design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO/Martketing</li>
+                            <li>Analyse business</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn">S'abonner</a>
+                </div>
+                <div class="bloc" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="header">
+                        <h3>Standard</h3>
+                        <span class="price">10000<small> cfa / mois</small></span>
+                    </div>
+                    <div class="main">
+                        <ul>
+                            <li>Design graphique</li>
+                            <li>Web design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO/Martketing</li>
+                            <li>Analyse business</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn">S'abonner</a>
+                </div>
+                <div class="bloc" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="header">
+                        <h3>Premium</h3>
+                        <span class="price">15000<small> cfa / mois</small></span>
+                    </div>
+                    <div class="main">
+                        <ul>
+                            <li>Design graphique</li>
+                            <li>Web design</li>
+                            <li>UI/UX</li>
+                            <li>HTML/CSS</li>
+                            <li>SEO/Martketing</li>
+                            <li>Analyse business</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn">S'abonner</a>
+                </div>
+            </div>
+        </section>
+        <section id="temoignages">
+            <div class="title">
+                <span>Témoignages</span>
+                <h2>Ce que disent nos clients</h2>
+            </div>
+            <div class="list-temoignage">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="header">
+                                <span>Saliou Mbodj</span>
+                                <small>DG SARL</small>
+                            </div>
+                            <p>They are the best and expertly trained team members who take the extra step and go the extra mill, all to fulfill our promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing
+                                global environment which was perfect for our needs !!</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header">
+                                <span>Mariama Sall</span>
+                                <small>Dentiste</small>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatem impedit nam soluta nesciunt illo temporibus adipisci sunt neque mollitia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <!-- <i class="fas fa-chevron-right"></i> -->
+                </div>
+                <div class="swiper-button-prev">
+                    <!-- <i class="fas fa-chevron-left"></i> -->
+                </div>
+            </div>
+        </section>
+        <section id="actualites">
+            <div class="title">
+                <span>Actualités</span>
+                <h2>Nos dernières actualités</h2>
+            </div>
+            <div class="container">
+                <div class="blog" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="img">
+                        <img src="./assets/Layer-596-min-1000x600.jpg" alt="image">
+                    </div>
+                    <div class="description">
+                        <div class="date-post">18 Sept 2023</div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur hic obcaecati reprehenderit officiis odit?</p>
+                        <hr>
+                        <a href="#" class="btn-more">En savoir plus...</a>
+                   </div>
+                </div>
+                <div class="blog" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="img">
+                        <img src="./assets/Layer-597-min-1000x600.jpg" alt="image">
+                    </div>
+                    <div class="description">
+                        <div class="date-post">18 Sept 2023</div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur hic obcaecati reprehenderit officiis odit?</p>
+                        <hr>
+                        <a href="#" class="btn-more">En savoir plus...</a>
+                   </div>
+                </div>
+                <div class="blog" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="img">
+                        <img src="./assets/Layer-600-min-1000x600.jpg" alt="image">
+                    </div>
+                   <div class="description">
+                        <div class="date-post">18 Sept 2023</div>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur hic obcaecati reprehenderit officiis odit?</p>
+                        <hr>
+                        <a href="#" class="btn-more">En savoir plus...</a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section id="partenaires">
+            <img src="/assets/partenaires/1.svg" alt="image">
+            <img src="/assets/partenaires/2.svg" alt="image">
+            <img src="/assets/partenaires/3.svg" alt="image">
+            <img src="/assets/partenaires/4.svg" alt="image">
+            <img src="/assets/partenaires/5.svg" alt="image">
+        </section>
+        <section id="devis">
+            <div class="contact">
+                <div class="title">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iste.</h2>
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+            <div id="contact-form">
+                <aside>
+                    <div class="location">
+                        <h4>Ou nous trouver ?</h4>
+                        <span>20280 Mostaqbal</span>
+                        <span>Sidi maarouf, Casablanca</span>
+                    </div>
+                    <div class="info">
+                        <h4>Horaire</h4>
+                        Nous vous répondrons sous 24h<br>Disponible 7j/7 10h : 00 - 17h : 00
+                    </div>
+                    <div class="btn-tel">
+                        <h4>Contact</h4>
+                        <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i> +212 656 716 530</a><br>
+                    </div>
+                </aside>
+                <form action="#">
+                    <h3>Demande de devis</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda blanditiis accusamus voluptatem delectus. Impedit quae unde reiciendis ad sequi asperiores deserunt tempora, provident culpa at esse numquam non eveniet quam!</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Phone">
+                        <select name="industry" id="industry">
+                            <option value="">Select your company</option>
+                            <option value="Company 1">Company 1</option>
+                            <option value="Company 2">Company 2</option>
+                            <option value="Company 3">Company 3</option>
+                            <option value="Company 4">Company 4</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <textarea name="msg" id="" cols="30" rows="5" placeholder="Additional details"></textarea>
+                    <div class="submit-group">
+                        <a type="submit" class="btn">Submit request <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="newsletter">
+            <p>Abonnez-vous à notre newsletter</p>
+            <form action="">
+                <input type="email" name="email" id="email">
+                <input type="submit" value="S'abonner">
+            </form>
+        </section>
+    </main>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <!-- main script -->
     <script src="./public/js/main.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <!-- <script type="module ">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;
+    </script> -->
+    <!-- stats.js -->
+    <script src="/public/js/stats.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+         const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            spaceBetween: 40,
+            slidesPerView: 1,
+            loop: true,
+
+        })
     </script>
 </body>
 
