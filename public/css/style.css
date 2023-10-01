@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 :root {
     --primary: #FF8000;
+    --secondary: #0a0a0a;
     --light: #ff750a4f;
     --dark: #000000;
     --white: #ffffff;
@@ -18,9 +19,16 @@
     box-sizing: border-box;
 }
 
+.container .item .description {
+    text-align: center;
+    transition: all .3s linear;
+}
+
 .submit-group {
     position: relative;
-    margin-top: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .input-group {
@@ -36,11 +44,10 @@
     padding: 18px 20px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #ff80003d;
     font-size: 20px;
     letter-spacing: 1px;
     color: #6c6c6c;
-    background: #6c6c6c14;
+    background: #0a0a0a;
     margin-bottom: 20px;
 }
 
@@ -73,7 +80,7 @@ section#actualites .container .blog .date-post {
     border-radius: 50px;
     word-spacing: 4px;
     top: -25px;
-    left: 30px;
+    right: 30px;
 }
 
 section#actualites .container .blog .img {
@@ -183,7 +190,7 @@ header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2121214a;
+    background-color: var(--secondary);
     backdrop-filter: blur(10px);
     background-size: 100% 100%;
     padding: 0 5%;
@@ -230,7 +237,7 @@ header .navbar nav ul.menu-list li a:hover {
     align-items: center;
     justify-content: space-between;
     height: 70vh;
-    background-color: #2121214a;
+    background-color: var(--secondary);
     padding: 4%;
     backdrop-filter: blur(10px);
     margin: 2% 0;
@@ -354,7 +361,7 @@ section.section-2 .stats .item:nth-child(even) p {
 section.section-2 {
     display: flex;
     flex-direction: row;
-    background: url(/assets/Layer-601-min-1000x600.jpg);
+    background: url(/assets/bg3.jpg);
     background-size: 100%;
     background-position: center;
     background-color: #000000eb;
@@ -616,7 +623,7 @@ section#about .about-us .img-bloc img {
 
 .container .bloc ul li {text-align: left;list-style: none;margin: 10px;position: relative;}
 .container .bloc ul li:before{content: "";position: absolute;width: 20px;height: 20px;background: url(/assets/t.svg);background-size: contain;background-repeat: no-repeat;background-position: center;left: -40px;top: 50%;transform: translateY(-50%);}
-.container .description i {font-size: 40px;}
+.container .description i {font-size: 40px;color: var(--white);}
 
 .container  .description h3 {
     padding-bottom: 0px;
@@ -687,8 +694,58 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     position: relative;
+}
+
+section#devis {
+    padding: 5% 0;
+    gap: 130px;
+}
+
+section#newsletter {
+    padding: 0%;
+    bottom: -45px;
+    z-index: 9;
+    gap: 35px;
+}
+
+section#newsletter form {
+    background: linear-gradient(45deg, #ffbb7c26, #ff80002e);
+    padding: 20px 2%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 100px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+section#newsletter form input {
+    padding: 15px 25px;
+    width: 100%;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+section#newsletter form input[type="submit"] {
+    width: auto;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0px;
+    /* padding: 20px 40px; */
+    margin: 0;
+}
+
+section#newsletter p {
+    font-size: 35px;
+    letter-spacing: 2px;
+    opacity: .3;
 }
 
 section#partenaires {
@@ -716,9 +773,10 @@ section#actualites .container {
 section#actualites .container .blog {
     display: flex;
     flex-direction: column;
+    background: #0a0a0a;
 }
 
-section#temoignages {width: 100%;background: url(/assets/bg3.jpg);background-color: #000000e3;background-blend-mode: soft-light;background-attachment: fixed;background-position: top;}
+section#temoignages {width: 100%;background: url(/assets/Layer-601-min-1000x600.jpg);background-color: #000000e3;background-blend-mode: soft-light;background-attachment: fixed;background-position: top;}
 
 .swiper-slide {
     text-align: center;
@@ -792,6 +850,10 @@ section#devis .contact{
     height: 700px;
     background-size: cover;
     padding: 4% 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000000e3;
+    background-blend-mode: soft-light;
 }
 
 section#devis .contact .title {
@@ -809,19 +871,10 @@ section#devis .contact ul {
     letter-spacing: 1px;
     margin-top: 30px;
 }
-
-section#devis .contact:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, black, transparent);
-    z-index: 0;
-}
 section #contact-form {
     position: relative;
     box-shadow: 1px 1px 50px #0000001c;
     margin: 0 8%;
-    top: -150px;
     background: #ffffff;
     display: flex;
     grid-gap: 0px;
@@ -830,8 +883,8 @@ section #contact-form {
 }
 
 section #contact-form form {
-    background: #0e0e0e;
-    padding: 5% 5% 8%;
+    background: #060606;
+    padding: 5% 10% 5%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -853,7 +906,7 @@ section #contact-form form p {
 }
 
 section #contact-form aside {
-    background: #171717;
+    background: #0a0a0a;
     padding: 4% 40px;
     color: var(--color0);
     font-size: 18px;
@@ -862,9 +915,8 @@ section #contact-form aside {
 section #contact-form aside a.tel {
     width: fit-content;
     padding: 0;
-    font-size: 24px;
-    font-weight: 100;
-    letter-spacing: 1px;
+    color: var(--white);
+    font-size: 18px;
 }
 
 section #contact-form aside a.tel:hover i {
@@ -875,12 +927,11 @@ section #contact-form aside a.tel:hover i {
 }
 
 section #contact-form aside a.tel i {
-    font-size: 18px;
-    border: 2px solid #ff7b0442;
-    padding: 12px;
+    font-size: 16px;
+    padding: 6px;
     transition: all .3s linear;
     border-radius: 50%;
-    margin-right: 18px;
+    margin-right: 0px;
 }
 
 section #contact-form aside span {
@@ -895,12 +946,18 @@ section #contact-form aside h4 {
 }
 
 section #contact-form aside {
-    letter-spacing: 0px;
     line-height: 1.5;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     letter-spacing: 1px;
+}
+
+section #contact-form aside div.info {
+    padding: 0 87px;
+    border: 1px solid #ff631866;
+    border-top: none;
+    border-bottom: none;
 }
 select{
     appearance: none;
@@ -915,3 +972,70 @@ select#industry + i {
     top: 20px;
     color: var(--primary);
 } 
+footer{
+    background: #0a0a0a;
+    background-size: 100%;
+    position: relative;
+}
+footer section {
+    display: flex;
+    flex-direction: row;
+    padding: 8% 2% 5%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background: #00000033;
+    backdrop-filter: blur(4px);
+}
+
+footer section:nth-child(2) {
+    padding: 2% 10%;
+    justify-content: space-between;
+    background: var(--primary);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+footer section:nth-child(2) ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+footer section .bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer section .bloc a,footer section .bloc span {
+    font-size: 18px;
+    color: var(--xhite);
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+footer section .bloc i {
+    color: var(--primary);
+}
+
+footer section .bloc img {
+    max-width: 270px;
+}
+
+footer section .bloc h3 {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+footer section .bloc ul {
+    list-style: none;
+}
+
+footer section .bloc ul a {
+    transition: all .3s linear;
+}
+
+footer section .bloc ul a:hover {
+    color: var(--primary);
+}
